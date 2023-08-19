@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="main_frame">
+        <!-- ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ -->
+        <div id="left_page">
+            <h1>Halo</h1>
+            <h2 class="jsClock"></h2>
+            <div id="authButtons">
+                <button id="joinBtn">회원가입</button>
+                <button id="loginBtn">로그인</button>
+                <button id="logoutBtn" class = "hidden">로그아웃</button>
+            </div>
+            <div id="joinForm" class="hidden"> 
+                <h3>회원가입</h3>            
+                <form id="joinSubmit">
+                    <input id="joinId" type="text" placeholder="ID" required><br>
+                    <input id="joinPw" type="password" placeholder="password" required><br>
+                    <input id="joinPwConfirm" type="password" placeholder="password confirm" required><br>
+                    <input type="submit" value="Join">
+                </form>
+            </div>
+
+            <div id = "joinIdCheckMsg" class="hidden"></div>
+            <div id="pwCheckMsg" class="hidden"></div>
+            <div id="loginForm" class="hidden"> 
+                <h3>로그인</h3>
+                <form id="loginSubmit">
+                    <input id="loginId" type="text" placeholder="ID" required><br>
+                    <input id="loginPw" type="password" placeholder="password" required><br>
+                    <input type="submit" value="login">
+                </form>
+            </div>
+            <div id="welcomeMessage" class="hidden"></div>
+            <div class="container">
+                <h1>Todo List</h1>
+                <form id="todoForm">
+                    <input type="text" placeholder="Add a task..." required>
+                    <button type="submit">Add</button>
+                </form>
+                <ul id="todoList"></ul>
+            </div>
+            <div><img src="img/m.svg" id="logo" alt="Nomad Coders Logo" style="cursor: pointer;"></div>
+
+            <div id="weather">
+                <span></span>
+                <span></span>
+              </div>
+        </div>
+
+        <!-- ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ -->
+        <div id = "right_page">
+            
+            <canvas id="gameCanvas" class="hidden" width="500" height="400"></canvas>
+            <iframe  id="right_default_page"src="https://nomadcoders.co/" width="100%" height="600px" frameborder="0"></iframe>
+        </div>
+        
+
+        
+    </div>
+
+
+   <script src="js/script.js"></script>
+   <script src="js/date.js"></script>
+   <script src="js/todo.js"></script>
+   <script src="js/login.js"></script>
+   <script src="js/weather.js"></script>
+</body>
+</html>

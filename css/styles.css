@@ -1,0 +1,200 @@
+body, html {
+    overflow: hidden;
+}
+ul{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+body{
+    
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+h1, h2, h3, span, #welcomeMessage{
+    font-style: italic;
+    color: bisque;
+}
+#moveToLink{
+    margin: 20px;
+}
+.container {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+#todoForm {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#todoForm input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#todoForm button {
+    width: 15%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#todoForm button:hover {
+    background-color: #0056b3;
+}
+
+#todoList {
+    
+    list-style: none;
+    padding: 0;
+}
+
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#todoList li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#todoList li button:focus {
+    outline: none;
+}
+
+#main_frame{
+    
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    
+    
+
+}
+
+#left_page{
+    height: max-content;
+    width: 35%;
+}
+
+#right_page{
+   
+    height: max-content;
+    width: 65%;
+}
+
+#right_default_page{
+    border: solid 5px
+}
+
+.hidden {
+    display: none;
+  }
+  
+  #gameCanvas {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+#authButtons {
+    margin-top: 20px;
+}
+
+#authButtons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#authButtons button:hover {
+    background-color: darkorange;
+}
+
+
+
+
+@keyframes shimmer {
+    0% {background-position: -200%;}
+    100% {background-position: 200%;}
+}
+
+#joinBtn, #loginBtn {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+#joinForm, #loginForm {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="password"], #todoForm input {
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, #todoForm input:focus {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+#joinSubmit input[type="submit"], #loginSubmit input[type="submit"] {
+    background: linear-gradient(135deg, #f9b54f, #4CAF50);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+    cursor: pointer;
+    width: 100%;
+}
+
+#joinSubmit input[type="submit"]:hover, #loginSubmit input[type="submit"]:hover {
+    background: linear-gradient(135deg, #f9b54f, #4CAF50);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+
+#joinForm, #loginForm {
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+
+
