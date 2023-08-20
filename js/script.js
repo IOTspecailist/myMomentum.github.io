@@ -1,5 +1,5 @@
 
-const images = ["j1.jpg","j2.jpg","j3.jpg","j4.jpg", "j5.jpg"];
+const images = ["j1.jpg","j2.jpg","j3.jpg","j4.jpg", "j5.jpg","angel01.png","angel01.png","car01.png","devil01.png","dog01.png","panda01.png"];
 const selectedImg = images[Math.floor(Math.random() * images.length)];
 
 document.body.style.backgroundImage = `url('img/${selectedImg}')`;
